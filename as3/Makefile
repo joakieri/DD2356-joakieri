@@ -2,7 +2,7 @@ CC=cc
 
 OUT1=ex1/hw.out
 OUT2=ex2/domainDecom1D.out
-OUT3=$(patsubst %,ex3/%.out,ping_pong ping_pong2)
+OUT3=$(patsubst %,ex3/%.out,ping_pong_2s ping_pong_1s)
 OUT4=$(patsubst %,ex4/%.out,pi_seq1 pi_seq2 pi_seq3 pi_seq4)
 
 .PHONY:clean
@@ -12,7 +12,7 @@ OUT4=$(patsubst %,ex4/%.out,pi_seq1 pi_seq2 pi_seq3 pi_seq4)
 beskow: $(OUT1) $(OUT2) $(OUT3) $(OUT4)
 
 # Running on Bescow
-# salloc --nodes=1 -t 00:05:00 -A edu20.DD2356 -C Haswell
+# salloc --nodes=1 -t 00:05:00 -A edu21.DD2356 -C Haswell
 # srun -n 4 ./a.out
 
 local: CC=mpicc
