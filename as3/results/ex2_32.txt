@@ -1,0 +1,12 @@
+My rank 0 of 32
+Here are my values for f including ghost cells
+-0.049251 (ghost), (sin(-0.049086) = -0.049066)
+0.000000
+0.049066
+0.098014
+0.146726
+0.195085
+0.242973 (ghost), (sin(0.245430) = 0.242973)
+Error of derivates at end points:
+|cos(0.000000) - f'(0.000000)| = 0.001484
+|cos(0.196344) - f'(0.196344)| = 0.000394
