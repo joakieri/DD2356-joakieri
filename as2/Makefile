@@ -23,3 +23,7 @@ DFTW1: DFTW1.c
 	
 DFTW2: DFTW2.c
 	cc -O3 -fopenmp -o $@ $^ -lm
+
+clean:
+	rm hw stream_bw stream_static stream_dynamic stream_guided sum DFTW1 DFTW2
+
