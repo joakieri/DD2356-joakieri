@@ -1,0 +1,14 @@
+# started on Mon May 24 00:29:49 2021
+
+
+ Performance counter stats for './matrix_multiply_opt.out':
+
+       77310173674      instructions              #    4.10  insn per cycle           (49.93%)
+       18845683234      cycles                                                        (66.62%)
+        1384855250      L1-dcache-load-misses     #    6.28% of all L1-dcache hits    (83.31%)
+       22058599815      L1-dcache-loads                                               (83.36%)
+             25201      LLC-load-misses           #    0.05% of all LL-cache hits     (33.33%)
+          45887414      LLC-loads                                                     (33.26%)
+
+       5.780821573 seconds time elapsed
+

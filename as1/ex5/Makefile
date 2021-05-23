@@ -17,10 +17,7 @@ test4: transpose_2049.out
 	perf stat -e instructions,cycles,L1-dcache-load-misses,L1-dcache-loads,LLC-load-misses,LLC-loads ./$^
 
 clean:
-	rm transpose_64.out
-	rm transpose_128.out
-	rm transpose_2048.out
-	rm transpose_2049.out
+	rm *.out
 
 transpose_64.out: transpose.c
 	cc -D N=64 -O2 -o $@ $^ 

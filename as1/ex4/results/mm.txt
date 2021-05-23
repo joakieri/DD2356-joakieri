@@ -1,0 +1,14 @@
+# started on Mon May 24 00:29:17 2021
+
+
+ Performance counter stats for './matrix_multiply.out':
+
+       66226363468      instructions              #    1.05  insn per cycle           (50.01%)
+       63177697238      cycles                                                        (66.67%)
+       13286131234      L1-dcache-load-misses     #   60.21% of all L1-dcache hits    (83.34%)
+       22067870894      L1-dcache-loads                                               (83.34%)
+             22546      LLC-load-misses           #    0.00% of all LL-cache hits     (33.33%)
+        1389993071      LLC-loads                                                     (33.33%)
+
+      18.222980202 seconds time elapsed
+

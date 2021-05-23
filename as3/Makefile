@@ -15,6 +15,10 @@ beskow: $(OUT1) $(OUT2) $(OUT3) $(OUT4)
 # salloc --nodes=1 -t 00:05:00 -A edu21.DD2356 -C Haswell
 # srun -n 4 ./a.out
 
+# For ex3
+# salloc --nodes=2 -t 00:10:00 -A edu21.DD2356 -C Haswell
+# srun -n 2 --ntasks-per-node=1 ./ping_pong
+
 local: CC=mpicc
 local: $(OUT1) $(OUT2) $(OUT3) $(OUT4)
 

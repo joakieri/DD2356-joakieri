@@ -54,12 +54,12 @@ int main(int argc, char *argv[]){
     
     // Print f values
     if (rank==0){ // print only rank 0 for convenience
-        printf("My rank %d of %d\n", rank, size );
+	printf("My rank %d of %d\n", rank, size );
         printf("Here are my values for f including ghost cells\n");
-        printf("%f (ghost)\n", f[0]);
+        printf("%f (ghost), (sin(%f) = %f)\n", f[0], -dx, sin(-dx));
         for (i=1; i<(nxn_loc-1); i++)
 	       printf("%f\n", f[i]);
-        printf("%f (ghost)\n", f[nxn_loc-1]);
+        printf("%f (ghost), (sin(%f) = %f)\n", f[nxn_loc-1], (nxn_loc-2)*dx, sin((nxn_loc-2)*dx));
         
         double x1 = L_loc*rank,
                x2 = L_loc*rank + (nxn_loc-3)*dx,
