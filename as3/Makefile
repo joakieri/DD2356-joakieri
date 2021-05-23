@@ -3,7 +3,7 @@ CC=cc
 OUT1=ex1/hw.out
 OUT2=ex2/domainDecom1D.out
 OUT3=$(patsubst %,ex3/%.out,ping_pong_2s ping_pong_1s)
-OUT4=$(patsubst %,ex4/%.out,pi_seq1 pi_seq2 pi_seq3 pi_seq4)
+OUT4=$(patsubst %,ex4/%.out,pi_seq pi_seq1 pi_seq2 pi_seq3 pi_seq4)
 
 .PHONY:clean
 

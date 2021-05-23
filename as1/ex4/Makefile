@@ -2,6 +2,9 @@
 
 build: matrix_multiply_64.out matrix_multiply_opt_64.out matrix_multiply.out matrix_multiply_opt.out
 
+# On Beskow
+# srun -n 1 perf stat -e instructions,cycles,L1-dcache-load-misses,L1-dcache-loads,LLC-load-misses,LLC-loads ./matrix_multiply_64.out
+
 test: test1 test2 test3 test4
 
 test1: matrix_multiply_64.out
@@ -17,10 +20,7 @@ test4: matrix_multiply_opt.out
 	perf stat -e instructions,cycles,L1-dcache-load-misses,L1-dcache-loads,LLC-load-misses,LLC-loads ./matrix_multiply_opt.out
 
 clean:
-	rm matrix_multiply_64.out
-	rm matrix_multiply_opt_64.out
-	rm matrix_multiply.out
-	rm matrix_multiply_opt.out 
+	rm *.out 
 
 matrix_multiply_64.out: matrix_multiply.c
 	cc -D MSIZE=64 -g -O2 matrix_multiply.c -o matrix_multiply_64.out

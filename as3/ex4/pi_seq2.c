@@ -20,6 +20,9 @@ int main(int argc, char* argv[]){
 
 	srand(SEED * rank);
 
+	double start, stop, diff;
+	if (rank == 0) start = MPI_Wtime();
+
 	// Calculate PI following a Monte Carlo method
 	for (int iter = 0; iter < (NUM_ITER / size); iter++) {
 		// Generate random (X,Y) points
@@ -32,10 +35,6 @@ int main(int argc, char* argv[]){
 		if (z <= 1.0)
 			count++;
 	}
-	
-	double start, stop, diff;
-	if (rank == 0)
-		start = MPI_Wtime();
 
 	for (int j = 2, k = 1; j <= size; j *= 2, k *= 2) {
 		if (rank % j == 0) {
