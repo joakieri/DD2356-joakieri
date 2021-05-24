@@ -1,14 +1,2 @@
-# started on Mon May 24 00:36:38 2021
-
-
- Performance counter stats for './transpose_64.out':
-
-           4987821      instructions              #    0.76  insn per cycle           (47.22%)
-           6534297      cycles                                                      
-            205579      L1-dcache-load-misses     #   11.51% of all L1-dcache hits  
-           1785418      L1-dcache-loads                                             
-     <not counted>      LLC-load-misses                                               (0.00%)
-     <not counted>      LLC-loads                                                     (0.00%)
-
-       0.009337724 seconds time elapsed
-
+Transpose 64 x 64
+BaseTime = 3.39e-06 s, Base Rate = 9.68e+03 MB/s

@@ -1,14 +1,2 @@
-# started on Mon May 24 00:36:00 2021
-
-
- Performance counter stats for './transpose_2049.out':
-
-        3061542625      instructions              #    0.23  insn per cycle           (49.94%)
-       13308601071      cycles                                                        (66.64%)
-         685864254      L1-dcache-load-misses     #  112.64% of all L1-dcache hits    (83.33%)
-         608894526      L1-dcache-loads                                               (83.39%)
-          52029694      LLC-load-misses           #   14.93% of all LL-cache hits     (33.27%)
-         348466228      LLC-loads                                                     (33.21%)
-
-       4.275702592 seconds time elapsed
-
+Transpose 2049 x 2049
+BaseTime = 3.80e-02 s, Base Rate = 8.84e+02 MB/s

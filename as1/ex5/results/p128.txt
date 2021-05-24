@@ -1,0 +1,14 @@
+# started on Mon May 24 11:40:59 2021
+
+
+ Performance counter stats for './transpose_128.out':
+
+          14548005      instructions              #    1.20  insn per cycle           (67.19%)
+          12123959      cycles                                                      
+           1926727      L1-dcache-load-misses     #   59.62% of all L1-dcache hits  
+           3231761      L1-dcache-loads                                             
+     <not counted>      LLC-load-misses                                               (0.00%)
+     <not counted>      LLC-loads                                                     (0.00%)
+
+       0.009351959 seconds time elapsed
+

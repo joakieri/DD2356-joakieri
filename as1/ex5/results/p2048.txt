@@ -1,0 +1,14 @@
+# started on Mon May 24 11:39:14 2021
+
+
+ Performance counter stats for './transpose_2048.out':
+
+        3050332477      instructions              #    0.18  insn per cycle           (49.95%)
+       16622661234      cycles                                                        (66.66%)
+         684801180      L1-dcache-load-misses     #  112.65% of all L1-dcache hits    (83.36%)
+         607885986      L1-dcache-loads                                               (83.36%)
+         345066794      LLC-load-misses           #   81.65% of all LL-cache hits     (33.28%)
+         422609663      LLC-loads                                                     (33.28%)
+
+       5.195187110 seconds time elapsed
+
