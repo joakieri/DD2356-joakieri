@@ -1,0 +1,10 @@
+The result is 3.141624
+Time: 20.648722
+The result is 3.141624
+Time: 20.649865
+The result is 3.141624
+Time: 20.643149
+The result is 3.141624
+Time: 21.294895
+The result is 3.141624
+Time: 21.191267
